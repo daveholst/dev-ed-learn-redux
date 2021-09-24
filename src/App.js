@@ -1,8 +1,10 @@
 // import logo from './logo.svg';
 import './App.css';
+import maths from './assets/calculation-math.gif';
 
 import { useSelector, useDispatch } from "react-redux";
 import { increment, decrement, change } from "./actions";
+
 
 function App() {
   const counter = useSelector(state => state.counter)
@@ -12,6 +14,7 @@ function App() {
 
   return (
     <div className="App">
+      <img src={maths} alt="good-maths-pic" />
       <h1>Good Redux Counter</h1>
       <h2>Count @ {counter}</h2>
       <div>
